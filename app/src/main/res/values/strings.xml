@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestProject</string>
+    <string name="text_loading">加载中...</string>
+    <string name="text_record">记录</string>
+</resources>
