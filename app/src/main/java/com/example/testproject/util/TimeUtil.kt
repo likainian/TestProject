@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat
  * Created by mike.li.
  */
 object TimeUtil {
-    const val FORMAT_YEAR_MONTH_DAY_TIME = "yyyy-MM-dd HH:mm"
+    const val FORMAT_YEAR_MONTH_DAY_TIME = "yyyy-MM-dd HH:mm:ss"
     private var sdf: SimpleDateFormat? = null
 
     init {
