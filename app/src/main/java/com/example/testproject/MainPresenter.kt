@@ -13,7 +13,7 @@ class MainPresenter : MainContract.MainPresenter {
     }
 
     override fun getHomeData() {
-        RetrofitService.getInstance().requestGet("https://api.github.com/", object : CallBack<String>() {
+        RetrofitService.getInstance.requestGet("https://api.github.com/", object : CallBack<String>() {
             override fun onResponse(response: String) {
                 SharedPreferencesUtil.getInstance().putString(SharedPreferencesUtil.HOME_DATA, response)
                 val time = TimeUtil.longToString(System.currentTimeMillis(), TimeUtil.FORMAT_YEAR_MONTH_DAY_TIME)
